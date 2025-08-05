@@ -1,0 +1,32 @@
+{
+  "daily_menus": [
+    {
+      "date": "2025-08-05",
+      "school": "Royal College",
+      "meals": [
+        {
+          "id": "meal_001",
+          "name": "Rice and Curry",
+          "description": "Traditional Sri Lankan rice with mixed vegetables and dhal curry",
+          "nutrition_score": 85,
+          "price": 50.00,
+          "subsidy_amount": 30.00,
+          "ingredients": ["rice", "dhal", "vegetables", "coconut"],
+          "allergens": [],
+          "dietary_tags": ["vegetarian", "gluten-free"]
+        },
+        {
+          "id": "meal_002", 
+          "name": "Chicken Sandwich",
+          "description": "Grilled chicken sandwich with fresh vegetables",
+          "nutrition_score": 75,
+          "price": 80.00,
+          "subsidy_amount": 20.00,
+          "ingredients": ["bread", "chicken", "tomato", "lettuce"],
+          "allergens": ["gluten"],
+          "dietary_tags": ["protein-rich"]
+        }
+      ]
+    }
+  ]
+}
