@@ -1,0 +1,415 @@
+.order-management {
+  width: 100%;
+  padding: 0;
+}
+
+/* Header Section */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.order-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.header-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+.refresh-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.2s;
+}
+
+.refresh-btn:hover {
+  background: #45a049;
+}
+
+/* Service Status Indicators */
+.service-status {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+  font-size: 11px;
+}
+
+.status-indicator {
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.status-indicator.checking {
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeaa7;
+}
+
+.status-indicator.connected {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.status-indicator.disconnected {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Service Error States */
+.service-error {
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.service-error h4 {
+  color: #721c24;
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+}
+
+.service-error p {
+  color: #721c24;
+  margin: 8px 0;
+  font-size: 0.9rem;
+}
+
+.troubleshooting {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.troubleshooting h5 {
+  margin: 5px 0;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.troubleshooting pre {
+  background: #f8f9fa;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #e9ecef;
+  margin: 5px 0;
+  font-family: monospace;
+  font-size: 0.8rem;
+  overflow-x: auto;
+}
+
+.troubleshooting a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.troubleshooting a:hover {
+  text-decoration: underline;
+}
+
+/* Authentication Required */
+.auth-required {
+  text-align: center;
+  padding: 20px;
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 6px;
+  color: #856404;
+}
+
+/* Debug Information */
+.debug-info {
+  background: #e3f2fd;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  border: 1px solid #bbdefb;
+}
+
+.debug-info p {
+  margin: 2px 0;
+  color: #1565c0;
+}
+
+.debug-info strong {
+  color: #0d47a1;
+}
+
+/* Error Messages */
+.error-message {
+  background: #ffebee;
+  color: #c62828;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #ffcdd2;
+}
+
+.error-message p {
+  margin: 0 0 8px 0;
+}
+
+.retry-btn {
+  background: #2196f3;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.2s;
+}
+
+.retry-btn:hover {
+  background: #1976d2;
+}
+
+/* Loading States */
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  font-style: italic;
+}
+
+/* Orders List */
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+  transition: box-shadow 0.2s;
+}
+
+.order-item:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-info {
+  flex: 1;
+}
+
+.order-info strong {
+  color: #333;
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.95rem;
+}
+
+.order-info p {
+  margin: 2px 0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Order Status Styles */
+.status-pending {
+  color: #f57c00;
+  font-weight: bold;
+}
+
+.status-confirmed {
+  color: #1976d2;
+  font-weight: bold;
+}
+
+.status-preparing {
+  color: #7b1fa2;
+  font-weight: bold;
+}
+
+.status-ready {
+  color: #388e3c;
+  font-weight: bold;
+}
+
+.status-delivered {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.status-cancelled {
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+/* Order Actions */
+.order-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.cancel-btn {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.2s;
+}
+
+.cancel-btn:hover {
+  background: #d32f2f;
+}
+
+/* No Orders State */
+.no-orders {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  font-style: italic;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+}
+
+/* Quick Order Section */
+.quick-order {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.quick-order h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.quick-order-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.quick-order-btn {
+  flex: 1;
+  min-width: 120px;
+  background: #2196f3;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.2s;
+}
+
+.quick-order-btn:hover {
+  background: #1976d2;
+}
+
+.test-order-btn {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.test-order-btn:hover {
+  background: #f57c00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .order-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .header-actions {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .service-status {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .quick-order-buttons {
+    flex-direction: column;
+  }
+  
+  .quick-order-btn {
+    flex: none;
+  }
+  
+  .order-item {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  
+  .order-actions {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-management {
+    padding: 0;
+  }
+  
+  .order-header h3 {
+    font-size: 1rem;
+  }
+  
+  .status-indicator {
+    font-size: 9px;
+    padding: 3px 6px;
+  }
+  
+  .order-item {
+    padding: 10px;
+  }
+  
+  .order-info strong {
+    font-size: 0.9rem;
+  }
+  
+  .order-info p {
+    font-size: 0.8rem;
+  }
+}

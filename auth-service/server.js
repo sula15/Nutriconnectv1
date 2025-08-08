@@ -16,10 +16,6 @@ app.use(express.urlencoded({ extended: true }));
 
 // API Routes
 app.use('/api/auth', require('./routes/auth'));
-app.use('/api/menus', require('./routes/menus'));
-app.use('/api/orders', require('./routes/orders'));
-app.use('/api/payments', require('./routes/payments'));
-app.use('/api/nutrition', require('./routes/nutrition'));
 app.use('/api/v1', require('./routes/downstream'));
 
 // Mock DPI Services

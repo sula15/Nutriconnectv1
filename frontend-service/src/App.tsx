@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
-import { Navbar } from './components/Navbar';
-import { Login } from './pages/Login';
-import { StudentDashboard } from './pages/StudentDashboard';
-import { ParentDashboard } from './pages/ParentDashboard';
-import { StaffDashboard } from './pages/StaffDashboard';
-import { MenuPage } from './pages/MenuPage';
-import { OrderHistory } from './pages/OrderHistory';
-import { ProtectedRoute } from './components/ProtectedRoute';
+import { Navbar } from './components/Navbar/Navbar';
+import { Login } from './pages/Login/Login';
+import { StudentDashboard } from './pages/StudentDashboard/StudentDashboard';
+import { ParentDashboard } from './pages/ParentDashboard/ParentDashboard';
+import { StaffDashboard } from './pages/StaffDashboard/StaffDashboard';
+import { MenuPage } from './pages/Menu/MenuPage';
+import { OrderHistory } from './pages/OrderHistory/OrderHistory';
+import { ProtectedRoute } from './components/ProtectedRoute/ProtectedRoute';
 import './App.css';
 
 function App() {

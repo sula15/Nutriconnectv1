@@ -1,0 +1,47 @@
+.dashboard .order-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e1e5e9;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dashboard .order-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard .order-card h2 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Integration with existing dashboard grid */
+.dashboard-grid .order-card .order-management {
+  padding: 0;
+}
+
+.dashboard-grid .order-card .order-header h3 {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Compact view for dashboard */
+.dashboard .order-card .orders-list .order-item {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+}
+
+.dashboard .order-card .quick-order-buttons {
+  gap: 6px;
+}
+
+.dashboard .order-card .quick-order-btn {
+  padding: 6px 10px;
+  font-size: 11px;
+}
