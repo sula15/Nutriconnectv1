@@ -413,3 +413,41 @@
     font-size: 0.8rem;
   }
 }
+
+/* Add these new styles to OrderManagement.css */
+.priority-urgent {
+  border-left: 4px solid #ff4444;
+  background: #fff8f8;
+}
+
+.priority-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.priority-badge.urgent {
+  background: #ff4444;
+  color: white;
+}
+
+.priority-badge.subsidized {
+  background: #28a745;
+  color: white;
+}
+
+.loading-spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #007bff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

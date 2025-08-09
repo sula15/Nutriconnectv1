@@ -1,21 +1,20 @@
-// =====================================================
-// FILE: src/utils/apiClient.ts (FIXED TypeScript Error)
-// =====================================================
-
 const AUTH_SERVICE_URL = process.env.REACT_APP_AUTH_SERVICE_URL || 'http://localhost:3001';
 const ORDER_SERVICE_URL = process.env.REACT_APP_ORDER_SERVICE_URL || 'http://localhost:3002';
+const PAYMENT_SERVICE_URL = process.env.REACT_APP_PAYMENT_SERVICE_URL || 'http://localhost:3003';
 
-// Define service endpoints with proper TypeScript typing
+// Service URL mapping
 const SERVICE_ENDPOINTS: Record<string, string> = {
   // Auth Service (port 3001)
   '/auth': AUTH_SERVICE_URL,
   '/menus': AUTH_SERVICE_URL,
-  '/payments': AUTH_SERVICE_URL,
   '/nutrition': AUTH_SERVICE_URL,
   '/v1': AUTH_SERVICE_URL,
   
   // Order Service (port 3002)
-  '/orders': ORDER_SERVICE_URL
+  '/orders': ORDER_SERVICE_URL,
+  
+  // Payment Service (port 3003)
+  '/payments': PAYMENT_SERVICE_URL
 };
 
 class ApiClient {
